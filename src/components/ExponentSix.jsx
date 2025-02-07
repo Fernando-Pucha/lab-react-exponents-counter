@@ -1,7 +1,7 @@
-const ExponentSix = () => (
+const ExponentSix = ({etCount}) => (
   <div className="exponent-counter-container">
-    <p className="exponent-label">n⁶</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 * 2 * 2 = <span className="total">64</span></p>
+    <p className="exponent-label">{etCount}⁶</p>
+    <p className="exponent-result">{etCount} * {etCount} * {etCount} * {etCount} * {etCount} * {etCount} = <span className="total">{etCount**6}</span></p>
   </div>
 );
 

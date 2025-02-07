@@ -1,7 +1,7 @@
-const ExponentFour = () => (
+const ExponentFour = ({etCount}) => (
    <div className="exponent-counter-container">
-    <p className="exponent-label">n⁴</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 = <span className="total">16</span></p>
+    <p className="exponent-label">{etCount}⁴</p>
+    <p className="exponent-result">{etCount} * {etCount} * {etCount} * {etCount} = <span className="total">{etCount**4}</span></p>
   </div>
 );
 
