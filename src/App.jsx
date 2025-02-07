@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-
+import Counter from "./components/Counter";
 import ExponentTwo from "./components/ExponentTwo";
 import ExponentThree from "./components/ExponentThree";
 import ExponentFour from "./components/ExponentFour";
@@ -21,12 +21,7 @@ function App() {
   return (
     <div className="App">
       <h2><em>Counter</em></h2>
-      <div className="counter-container">
-        <p className="counter-value">{count}</p>
-        <button className="counter-button" onClick={decrement}>-</button>
-        <button className="counter-button" onClick={increment}>+</button>
-      </div>
-
+      <Counter count={count} decrement={decrement} increment={increment} />
       <br />
       <h2><em>Exponents</em></h2>
 
